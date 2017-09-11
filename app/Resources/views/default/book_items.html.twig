@@ -1,0 +1,11 @@
+{% for book in books %}
+    <li>
+        <a href="{{ path('book', {'book_name': book.name}) }}">{{ book.name }}</a> /
+        <small>
+        {% for genre in book.genres %}
+            <a href="{{ path('genre', {'genre_name': genre.name}) }}">{{ genre.name }}</a>
+        {% endfor %}
+        </small>
+    </li>
+{% endfor %}
+
