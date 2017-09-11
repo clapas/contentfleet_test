@@ -4,6 +4,8 @@
 /phpunit.xml
 /var/*
 !/var/data
+/var/data/*
+!var/data/.gitkeep
 !/var/cache
 /var/cache/*
 !var/cache/.gitkeep
